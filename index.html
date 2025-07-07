@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formes e tabelas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <head>
+            <h1>cadastro e tabela</h1>
+            <p>atividade de HTML e CSS</p>
+
+            <header>
+                <section>
+                    <h2>formulario</h2>
+                    <form>
+                        <label for="nome">nome</label>
+                        <input type="text" id="nome" name="nome" placeholder="digite seu nome aqui">
+
+                        <label>Gênero</label>
+                        <div class="inline">
+                            <label><input type="radio" name="genero">Masculino</label>
+                            <label><input type="radio" name="genero">feminino</label>
+                            <label><input type="radio" name="genero">outros</label>
+                        </div>
+
+                        <label for="cargo"> Area de trabalho</label>
+                        <select id="cargo">
+                            <option>deselvolvedor</option>
+                            <option>analista</option>
+                            <option>DBA</option>
+                            <option>testador</option>
+                        </select>
+                        <label>unidade</label>
+                        <div class="inline">
+                            <label><input type="checkbox">fortaleza-ce</label>
+                            <label><input type="checkbox">juazeiro</label>
+                            <label><input type="checkbox">sobral</label>
+
+                        </div>
+                        <label for="apresentacao"> apresentação</label>
+                        <textarea id="apresentacao" rows="3"></textarea>
+
+                        <button type="submit">Enviar</button>
+                    </form>
+
+                    <section class="card">
+                        <h2>medalhas</h2>
+                        <table>
+                            <caption>quadro olimpico</caption>
+                            <thead>
+                                <tr>
+                                    <th>pais</th>
+                                    <th class="bronze">🥉</th>
+                                    <th class="ouro">🥇</th>
+                                    <th class="prata">🥈</th>
+                                </tr>
+                            </thead><TBOdy>
+                                <tr>
+                                      
+                                  <td>Brasil</td>  
+                                  <td>3</td>
+                                  <td>2</td>
+                                  <td>1</td>
+                                </tr>
+                                
+                                <tr>
+                                <td>canada</td>
+                                <td>1</td>
+                                <td>5</td>
+                                <td>4</td>
+                                </tr>
+
+                                <tr>
+                                 <td>estados unidos</td>
+                                  <td>1</td>
+                                  <td>3
+                                 <td>4</td>
+                                  </td>
+                                </tr>
+
+                                <tr>
+                               <td class="total" colspan="4">total 12 medalhas</td>
+                                </tr>
+                            </TBOdy>
+                        </table>
+                    </section>
+            </header>
+
+    </div>
+</body>
+
+</html>
