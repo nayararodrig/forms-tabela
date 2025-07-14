@@ -4,94 +4,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>formes e tabelas</title>
+    <title>Forms e Tabelas</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="container">
+        <header>
+            <h1>Cadastro e tabela</h1>
+            <p>Atividade de HTML e CSS</p>
+        </header>
+        <section class="card">
+            <h2>Formulário</h2>
+            <form>
+                <label for="Nome">Nome</label>
+                <input type="text" id="Nome" name="Nome" placeholder="Digite seu nome aqui.">
 
-        <head>
-            <h1>cadastro e tabela</h1>
-            <p>atividade de HTML e CSS</p>
+                <label>Gênero</label>
+                <div class="inline">
+                    <label><input type="radio" name="Genero">Masculino</label>
+                    <label><input type="radio" name="Genero">Feminino</label>
+                    <label><input type="radio" name="Genero">Outros</label>
+                </div>
+                <label for="Cargo">Área de Interesse</label>
+                <select id="Cargo">
+                    <option>Desenvolvedor</option>
+                    <option>Analista</option>
+                    <option>DBA</option>
+                    <option>Testador</option>
+                    <option>Dama da noite</option>
+                </select>
 
-            <header>
-                <section>
-                    <h2>formulario</h2>
-                    <form>
-                        <label for="nome">nome</label>
-                        <input type="text" id="nome" name="nome" placeholder="digite seu nome aqui">
+                <label>Unidades</label>
+                <div class="inline">
+                    <label><input type="checkbox">Fortaleza</label>
+                    <label><input type="checkbox">Juazeiro</label>
+                    <label><input type="checkbox">Sobral</label>
+                </div>
+                <label for="Apresentacao">Apresentação</label>
+                <textarea id="apresentacao" rows="3"></textarea>
 
-                        <label>Gênero</label>
-                        <div class="inline">
-                            <label><input type="radio" name="genero">Masculino</label>
-                            <label><input type="radio" name="genero">feminino</label>
-                            <label><input type="radio" name="genero">outros</label>
-                        </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
 
-                        <label for="cargo"> Area de trabalho</label>
-                        <select id="cargo">
-                            <option>deselvolvedor</option>
-                            <option>analista</option>
-                            <option>DBA</option>
-                            <option>testador</option>
-                        </select>
-                        <label>unidade</label>
-                        <div class="inline">
-                            <label><input type="checkbox">fortaleza-ce</label>
-                            <label><input type="checkbox">juazeiro</label>
-                            <label><input type="checkbox">sobral</label>
-
-                        </div>
-                        <label for="apresentacao"> apresentação</label>
-                        <textarea id="apresentacao" rows="3"></textarea>
-
-                        <button type="submit">Enviar</button>
-                    </form>
-
-                    <section class="card">
-                        <h2>medalhas</h2>
-                        <table>
-                            <caption>quadro olimpico</caption>
-                            <thead>
-                                <tr>
-                                    <th>pais</th>
-                                    <th class="bronze">🥉</th>
-                                    <th class="ouro">🥇</th>
-                                    <th class="prata">🥈</th>
-                                </tr>
-                            </thead><TBOdy>
-                                <tr>
-                                      
-                                  <td>Brasil</td>  
-                                  <td>3</td>
-                                  <td>2</td>
-                                  <td>1</td>
-                                </tr>
-                                
-                                <tr>
-                                <td>canada</td>
-                                <td>1</td>
-                                <td>5</td>
-                                <td>4</td>
-                                </tr>
-
-                                <tr>
-                                 <td>estados unidos</td>
-                                  <td>1</td>
-                                  <td>3
-                                 <td>4</td>
-                                  </td>
-                                </tr>
-
-                                <tr>
-                               <td class="total" colspan="4">total 12 medalhas</td>
-                                </tr>
-                            </TBOdy>
-                        </table>
-                    </section>
-            </header>
-
+        <section class="card">
+            <h2>Medalhas</h2>
+            <table>
+                <caption>Quadro Olímpico</caption>
+                <thead>
+                    <tr>
+                        <th>País</th>
+                        <th class="ouro">🥇</th>
+                        <th class="prata">🥈</th>
+                        <th class="bronze">🥉</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Brasil</td>
+                        <td>3</td>
+                        <td>2</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Rússia</td>
+                        <td>8</td>
+                        <td>7</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>Suíça</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" class="total">Total: 53 Medalhas</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
     </div>
 </body>
 
